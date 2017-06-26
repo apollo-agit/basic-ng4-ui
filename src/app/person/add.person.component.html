@@ -1,0 +1,39 @@
+<md-card>
+
+    <md-card-title>
+        Add Person
+    </md-card-title>
+
+    <md-input-container>
+        <input mdInput placeholder="First Name" [(ngModel)]="formObject.firstName" type="text">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Middle Name" [(ngModel)]="formObject.middleName" type="text">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Last Name" [(ngModel)]="formObject.lastName" type="text">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Age" [(ngModel)]="formObject.age" type="number">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Hair Color" [(ngModel)]="formObject.hairColor" type="text">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Eye Color" [(ngModel)]="formObject.eyeColor" type="text">
+    </md-input-container>
+
+    <md-select placeholder="Gender" [(ngModel)]="formObject.gender">
+        <md-option *ngFor="let gender of genderOptions" [value]="gender">{{ gender }}</md-option>
+    </md-select>
+
+    <md-card-actions>
+    	<button md-raised-button (click)="onAddClick()">Add Person</button>
+    </md-card-actions>
+
+</md-card>
