@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule }  from '@angular/platform-browser';
 import { MaterialModule } from '@angular/material';
 import { AddPersonComponent } from '../person/add.person.component';
+import { AddPersonListComponent } from '../person/add.person.list.component';
 import { SearchPersonComponent } from '../person/search.person.component';
 import { FluxReducer } from '../common/flux.reducer';
 import { LocalStorageService } from '../common/localstorage.service';
@@ -17,6 +18,7 @@ import { MdButtonModule } from '@angular/material';
   ],
   declarations: [
   	AddPersonComponent,
+    AddPersonListComponent,
     SearchPersonComponent
   ],
   providers: [
@@ -26,6 +28,7 @@ import { MdButtonModule } from '@angular/material';
   ],
   bootstrap: [ 
   	AddPersonComponent, 
+    AddPersonListComponent,
     SearchPersonComponent
   ]
 })
