@@ -33,7 +33,15 @@
     </md-select>
 
     <md-card-actions>
-    	<button md-raised-button (click)="onAddClick()">Add Person</button>
+        <button md-raised-button (click)="onAddClick()">Add Person</button>
     </md-card-actions>
 
 </md-card>
+
+
+<div *ngFor="let name of allAddUsersObject">
+    <md-card class="ppl">
+        <md-icon>face circle</md-icon>
+        {{name}}
+    </md-card>
+</div>
